@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Name Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="video-container">
+            <video id="backgroundVideo"  muted=""></video>
+            <!-- <video id="backgroundVideo"  muted=""></video>
+            <video id="backgroundVideo"  muted=""></video>
+            <video id="backgroundVideo"  muted=""></video> -->
+         </div>
+      
+        <div class="content-container">
+    
+          <div class="animated-name">
+      
+            <h1>A</h1>
+            <h1>N</h1>
+            <h1>I</h1>
+            <h1>M</h1>
+            <h1>A</h1>
+            <h1>T</h1>
+            <h1>E</h1>
+            <h1>D</h1>
+            &nbsp;
+            <h1>N</h1>
+            <h1>A</h1>
+            <h1>M</h1>
+            <h1>E</h1>
+      
+          </div>
+      
+          <div class="dropdown-container">
+            <label for="animation-type">Select animation:</label>
+            <select id="animation-type">
+              <option value="manish">Myanimated</option>
+              <option value="fadeIn">Fade In</option>
+              <option value="scaleIn">Scale In</option>
+              <option value="rotateIn">Rotate In</option>
+            </select>
+            <label for="background-video">Select background video:</label>
+            <select id="background-video">
+              <option value="#">None</option>
+              <option value="smoke.mov">Smoke 1</option>
+              <option value="smoke2.mp4">Smoke 2</option>
+              <option value="smoke3.mp4">Frame Effect</option>
+              <option value="smoke5.mp4">Smoke 4</option>
+              <option value="beach effect.mp4">Beach effect</option>
+              <option value="celebrating effect.mp4">celebrating Effect</option>
+              <option value="cloudy.mp4">Cloudy</option>
+              <option value="desert.mp4">Desert</option>
+              <option value="eye effect.mp4">Eye Ball</option>
+              <option value="football.mp4">FoodBall</option>
+              <option value="islands.mp4">Islands</option>
+              <option value="light effect.mp4">Light Effect</option>
+              <option value="lighthouse.mp4">Light House</option>
+              <option value="mountain effect.mp4">Mountain</option>
+              <option value="mountains sunset.mp4">Mountains Sunset</option>
+              <option value="river 2 effect.mp4">River </option>
+              <option value="sea effect.mp4">Sea</option>
+
+
+            </select>
+          </div>
+      
+          <div class="container">
+            <label for="favcolor">Choose Name Color : </label>
+            <input type="color" id="favcolor" value="#ffffff">
+      
+            <label for="shadow-color">Choose Shodow Color : </label>
+            <input type="color" id="shadow-color" value="#ffffff">
+
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <button onclick="setName()">Set</button>
+          </div>
+      
+      
+        </div>
+        <div id="result">
+        </div>
+
+        <script src="index.js"></script>
+</body>
+</html>

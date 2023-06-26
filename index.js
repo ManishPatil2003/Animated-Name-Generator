@@ -50,7 +50,8 @@ function setName() {
     var backgroundVideoSelect = document.getElementById("background-video");
     var fontColorSelect = document.getElementById("favcolor");
     var shadowColor = document.getElementById("shadow-color");
-     var fontSizeInput = document.getElementById("font-size-input").value;
+    var fontSizeInput = document.getElementById("font-size-input").value;
+    var shadowSize = document.getElementById("shadow-size").value;
 
     video.src = backgroundVideoSelect.value;
     video.play();
@@ -60,6 +61,7 @@ function setName() {
         spanElement.style.color = fontColorSelect.value;
         spanElement.style.textShadow = `2px 8px 3px ${shadowColor.value}`;
         spanElement.style.fontSize = fontSizeInput + 'px';
+        spanElement.style.textShadow = `${shadowSize} ${shadowColor.value}`;
     });
 
     var video = document.getElementById("backgroundVideo");

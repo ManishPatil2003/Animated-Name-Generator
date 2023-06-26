@@ -46,13 +46,6 @@ body {
     text-shadow: 5px 7px 3px #4b484a;
 }
 
-/* .box span:hover{
-    transform: scale(1.5);
-    cursor: pointer;
-} */
-
-    
-
 
 @keyframes manish {
     0% {
@@ -112,26 +105,18 @@ h1 {
 }
 
 .dropdown-container label {
-    margin: 0px 30px;
+    margin: 13px 15px;
     color: #fff;
     font-size: 20px;
 }
 
 .dropdown-container select {
-    padding: 10px;
-    width: 150px;
+    padding: 0px;
+    width: 100px;
     background-color: #555;
     color: #fff;
 }
-
-.content-container .container label {
-    color: #fff;
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin: 20px;
-}
-
-.content-container .container input[type="text"] {
+.dropdown-container input[type="text"] {
     padding: 20px;
     width: 200px;
     font-size: 14px;
@@ -139,8 +124,9 @@ h1 {
     outline: none;
 }
 
-.content-container .container button {
-    padding: 20px;
+.dropdown-container button {
+    padding: 15px;
+    margin-left:10px;
     font-size: 16px;
     color: #fff;
     background-color: #ef08d4;
@@ -150,11 +136,24 @@ h1 {
     transition: all 0.5s;
 }
 
-.content-container .container button:hover {
+.dropdown-container button:hover {
     background-color: #fd04e0;
     transform: scale(1.1);
 }
 
+.content-container .container label {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin: 20px;
+}
+.content-container .container input[type="number"] , [type="text"]{
+    padding: 20px 15px;
+    width: 200px;
+    font-size: 14px;
+    border-radius: 20px;
+    outline: none;
+}
 
 @keyframes fadeIn {
     0% {

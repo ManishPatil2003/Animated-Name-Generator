@@ -50,6 +50,7 @@ function setName() {
     var backgroundVideoSelect = document.getElementById("background-video");
     var fontColorSelect = document.getElementById("favcolor");
     var shadowColor = document.getElementById("shadow-color");
+     var fontSizeInput = document.getElementById("font-size-input").value;
 
     video.src = backgroundVideoSelect.value;
     video.play();
@@ -58,6 +59,7 @@ function setName() {
     spanElements.forEach(function (spanElement) {
         spanElement.style.color = fontColorSelect.value;
         spanElement.style.textShadow = `2px 8px 3px ${shadowColor.value}`;
+        spanElement.style.fontSize = fontSizeInput + 'px';
     });
 
     var video = document.getElementById("backgroundVideo");
